@@ -1,0 +1,19 @@
+---
+title: "Developing data products week 2"
+author: "Sarath G"
+date: "17 August 2018"
+output: html_document
+---
+
+
+```{r, echo=FALSE, message=FALSE}
+##library(knitr)
+library(leaflet)
+##library(dplyr)
+
+
+map <- leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lat=12.999096, lng=77.592058, popup="Bangalore palace")
+map  # Print the map
+```
